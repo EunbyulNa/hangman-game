@@ -39,11 +39,28 @@ document.addEventListener( "DOMContentLoaded", function() {
 
         //loop through the randomWord, if user put the right guess, 
         //and fill the correct word into the each span
-        for(let i=0; i<randomWord.length; i++){
-            if(randomWord[i] === userGuess){
-                wordSpans[i].innerHTML = userGuess
+        /*for(let i=0; i<randomWord.length; i++){
+            if(randomWord[i] === userGuess)
+            {
+              wordSpans[0].style = "text-transform: uppercase;"
+                wordSpans[i].innerHTML = userGuess;
+                let a=wordSpans[0].innerHTML;
+                a.toUpperCase();
+               
+                
             }
-          } //forloop ends
+          } //forloop ends*/
+          for (let i = 0; i < randomWord.length; i++) {
+            if (randomWord[i] === userGuess) {
+              if (i === 0) {
+                wordSpans[i].textContent = randomWord[i].toUpperCase();
+              } else {
+                wordSpans[i].textContent = userGuess;
+              }
+            }
+          }
+          
+         
         
           //otherwhise put userGuess into the wrong container
         }else{
@@ -52,9 +69,15 @@ document.addEventListener( "DOMContentLoaded", function() {
         }
 
     }
+  
+      });
 
-      })
+     
 
+
+
+
+  
 
 
 
