@@ -38,7 +38,122 @@
 }
 .hangman-draw{
    
+   position: relative;
+  
 }
+
+.pillar{
+    position: absolute;
+   top: 25px;
+    display: inline-block;
+    width: 20px;
+    height: 350px;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.draw-one{
+    position: absolute;
+     top: -70px;
+    left:125px;
+    display: inline-block;
+    width: 10px;
+    height: 230px;
+   
+    background-color: black;
+    transform: rotate(90deg);
+}
+
+.draw-two{
+    position: absolute;
+    top: 40px;
+    left: 120px;
+    display: inline-block;
+    width: 3px;
+    height: 50px;
+   
+    background-color: black;
+   
+}
+
+.draw-three{
+    position: absolute;
+    top: 90px;
+    left: 97px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+     border-radius: 50%;
+    border: 3px solid black;
+   
+}
+
+.draw-four{
+    position: absolute;
+    top: 140px;
+    left:120px;
+     display: inline-block;
+     width: 3px;
+     height: 70px;
+     border: 1px solid black;
+     background-color: black;
+   
+}
+
+.draw-five{
+    position: absolute;
+    top: 135px;
+    left:107px;
+     display: inline-block;
+     width: 3px;
+     height: 40px;
+     border: 1px solid black;
+     background-color: black;
+     transform: rotate(40deg);
+   
+}
+
+.draw-six{
+    position: absolute;
+    top: 135px;
+    left:132px;
+     display: inline-block;
+     width: 3px;
+     height: 40px;
+     border: 1px solid black;
+     background-color: black;
+     transform: rotate(320deg);
+     
+}
+
+.draw-seven{
+    position: absolute;
+    top: 200px;
+    left:105px;
+     display: inline-block;
+     width: 3px;
+     height: 50px;
+     border: 1px solid black;
+     background-color: black;
+     transform: rotate(40deg);
+     
+}
+
+.draw-eight{
+    position: absolute;
+    top: 200px;
+    left:135px;
+     display: inline-block;
+     width: 3px;
+     height: 50px;
+     border: 1px solid black;
+     background-color: black;
+     transform: rotate(320deg);
+     
+}
+
+
+
 
 .guess-word{
     display: flex;
