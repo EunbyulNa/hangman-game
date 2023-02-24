@@ -1,6 +1,12 @@
 *{
     margin:0;
     box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+   
+}
+
+body {
+    background-color: #F5F6F7;
 }
 
 
@@ -8,7 +14,7 @@
     margin:50px auto;
     width: 1000px;
    height: 500px;
-    border: 1px solid black;
+   
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: 80px;
@@ -24,16 +30,37 @@
 
 }
 
+.head h1 {
+    display: inline-block;
+    position: relative;
+}
+
+   .head h1::before {
+        content: "";
+        position: absolute;
+        left:160px;
+        bottom: 16px;
+        width: 350px;
+        height: 14px;
+        transform: skew(-12deg) translateX(-50%);
+        background: rgba(238,111,87,0.5);
+        z-index: -1;
+      }
+
+
+
 .drawing-container{
    
     width: 300px;
   border: 1px solid black;
+  border-radius: 10px;
+ 
 
 }
 .used-word{
     height: 41px;
     padding: 10px;
-    border: 1px solid black;
+   
     text-align: center;
 }
 .hangman-draw{
@@ -43,8 +70,9 @@
 }
 
 .pillar{
+    border-bottom-left-radius: 10px ;
     position: absolute;
-   top: 25px;
+   top: 27px;
     display: inline-block;
     width: 20px;
     height: 350px;
@@ -160,7 +188,7 @@
     justify-content: center;
     align-items: center;
     width: 700px;
-    border: 1px solid black;
+   
 }
 
 
@@ -181,3 +209,27 @@
     border-bottom: 1px solid black;
     margin-left: 10px;
 }
+
+.msg {
+   
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -40%);
+    width: 500px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: antiquewhite;
+}
+
+window.addEventListener("keydown", function(e){
+    console.log(e)
+})
