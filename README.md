@@ -87,7 +87,7 @@ Sometimes, I select the wrong elements, and it leads to unexpected results. So i
 - Build one part at a time :
 "Rome wasn't built in a day." 
 Creating something from nothing always takes time, so I keep this phrase in my mind. 
-I focus on one feature at a time, so I won't be overwhelmed. Doing
+I focus on one feature at a time, so I won't be overwhelmed.
 
 ## 📖 Article
 https://nostarch.com/download/JS4K_ch7.pdf
