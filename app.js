@@ -92,6 +92,7 @@ document.addEventListener( "DOMContentLoaded", function() {
           case 7:
             let drawOne = document.createElement('span');
             drawOne.classList.add("draw-one"); 
+             //Insert the drawOne span after pillar element
             aPillar.insertAdjacentElement('afterend', drawOne);
             break;
           case 6:
