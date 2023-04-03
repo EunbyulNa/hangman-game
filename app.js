@@ -68,6 +68,7 @@ document.addEventListener( "DOMContentLoaded", function() {
                correctArr.push(span.innerHTML)
              })
              if(correctArr.join('').toLowerCase() === randomWord){
+                 //welldone function will excute 1 millisecond 
               setTimeout(wellDone,1)
              }
             }
